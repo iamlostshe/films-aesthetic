@@ -1,8 +1,11 @@
 # FILMS-AESTETIC
 
-Скрипт для создания красивых постеров для фильмов.
 
-![фото с демонстрацией работы скрипта](res/image.png)
+| <img src="images/fight_club.png"> | <img src="images/the_social_network.png"> | <img src="images/joker.png"> | <img src="images/wayne.png"> | <img src="images/mister_robot.png"> |
+| - | - | - | - | - | 
+
+
+Скрипт для создания красивых постеров для фильмов.
 
 # Инструкция по установке
 

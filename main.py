@@ -8,14 +8,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 # Данные о фильме
-TITLE = "FIGHT CLUB"
-YEAR = "1999"
-DURATION = "139"
-DIRECTED_BY = "DAVID FINCHER"
-PRODUCED_BY = "ART LINSON  CEAN CHAFFIN"
-STARRING = "BRAD PITT  EDWARD NORTON  HELENA BONHAM CARTER"
+TITLE = "MISTER ROBOT"
+YEAR = "2015"
+DURATION = "40–65"
+DIRECTED_BY = "Sam Esmail  Various (season 1)"
+PRODUCED_BY = "Igor Srubshchik  Christian Slater  Rami Malek"
+STARRING = "Rami Malek  Carly Chaikin  Portia Doubleday"
 
-IMAGE_URL = "https://i.pinimg.com/736x/dc/25/24/dc25246cb3efeb5819b8e60602656f04.jpg"
+IMAGE_URL = "https://i.pinimg.com/736x/d3/36/e6/d336e616063b6818f145c6fff24b2b22.jpg"
 
 
 # Константы
@@ -25,7 +25,7 @@ FONT_TEXT = "res/font-text.ttf"
 TEXT_COLOR = '#2f2b28'
 BG_COLOR = '#dcd9d2'
 
-OUTPUT_NAME = 'output.png'
+OUTPUT_NAME = 'mister_robot.png'
 
 
 def crop_to_square(image):
@@ -92,21 +92,21 @@ def main():
 
     draw.text(
         (30, text_start_y + 150),
-        f"directed by   {DIRECTED_BY}",
+        f"directed by   {DIRECTED_BY.upper()}",
         font=text_font,
         fill=TEXT_COLOR
     )
 
     draw.text(
         (30, text_start_y + 180),
-        f"produced by   {PRODUCED_BY}",
+        f"produced by   {PRODUCED_BY.upper()}",
         font=text_font,
         fill=TEXT_COLOR
     )
 
     draw.text(
         (30, text_start_y + 220),
-        f"starring   {STARRING}",
+        f"starring   {STARRING.upper()}",
         font=text_font,
         fill=TEXT_COLOR
     )
