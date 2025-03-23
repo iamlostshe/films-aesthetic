@@ -74,10 +74,10 @@ python3 -m venv venv
 pip3 install -r requirements.txt
 ```
 
-**Запускаем бота:**
+**Запускаем скрипт:**
 
 ``` bash
-python3 bot.py
+python3 main.py
 ```
 
 </details>
