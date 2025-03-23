@@ -6,5 +6,5 @@ venv
 .vscode
 .idea
 
-# Project
-output.png
+# uv
+uv.lock

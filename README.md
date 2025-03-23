@@ -11,31 +11,73 @@
 
 1. **Клонируем репозитрий**
 
-```
+```bash
 git clone https://github.com/iamlostshe/FILMS-AESTETIC
-```
-
-2. **Переходим в дирректорию с проектом:**
-
-``` bash
 cd FILMS-AESTETIC
 ```
 
-3. **Устанавливаем необходимые зависимости:**
+2. **Устанавливаем зависимости и запускаем проект:**
+
+<details>
+<summary>
+Через uv (рекомендуется)
+</summary>
+
+**Устанавливаем `uv` (если еще не установлен):**
+
+Linux:
 
 ``` bash
-pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-> Если вы под Linux-ом не забудьте создать виртуальное окружение
+Windows:
+
+``` bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+**Запускаем:**
+
+```bash
+uv run main.py
+```
+
+</details>
+
+<details>
+<summary>
+Через `requirements.txt`
+</summary>
+
+**Создаём виртуальное окружение:**
+
+``` bash
+python3 -m venv venv
+```
+
+**Активируем виртуальное окружение:**
+
+``` bash
+. venv/bin/activate
+```
+
+> Последняя команда для Windows:
+>
 > ``` bash
-> python -m venv venv
-> . venv/bin/activate
+> venv\Scripts\activate
 > ```
 
-4. **Заполняем поля в `.env.dist` и переименовываем его в `.env`**
+**Устанавливаем зависимости:**
 
-5. **Запуск бота**
+``` bash
+pip3 install -r requirements.txt
 ```
+
+**Запускаем бота:**
+
+``` bash
 python3 bot.py
 ```
+
+</details>
